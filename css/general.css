@@ -1,0 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Assicura che il padding e il bordo siano inclusi nelle dimensioni totali degli elementi */
+}
+body::-webkit-scrollbar {
+    display: none;
+}

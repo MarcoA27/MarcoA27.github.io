@@ -1,0 +1,59 @@
+header {
+    background-color: rgb(148, 7, 7);
+    height: 102px;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+.menu-island {
+    background-color: rgba(43, 255, 0, 0);
+    height: 150px;
+    width: 100%;
+    position: relative;
+    left: 15px;
+    top: 15px;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+}
+.menu-island .logo {
+    width: 144px;
+    height: 150px;
+    display: block;
+    position: relative;
+    z-index: 4;
+}
+.menu-island .scrittalogo {
+    width: auto;
+    height: 38px;
+    top: 12.5px;
+    left: -1px;
+    display: block;
+    position: relative;
+    z-index: 4;
+}
+.nav {
+    background-color: rgb(255, 255, 255);
+    height: 38px;
+    top: 12.5px;
+    left: -3px;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.nav a {
+    color: rgb(0, 0, 0); /* Colore del testo */
+    text-decoration: none; /* Rimuove il sottolineato dei link */
+    margin-right: 40px; /* Spazio tra i link */
+    z-index: 6;
+    font-size: 120%;
+}
+/* Stile per gli elementi del menu quando ci si passa sopra con il mouse */
+.nav a:hover {
+    position: relative;
+    color: #940707; /* Cambia il colore del testo quando ci si passa sopra */
+    transition: background-color ease; /* Aggiunge un effetto di transizione fluida */
+}
