@@ -1,12 +1,12 @@
 main {
-    padding-top: 102px;
-    width: 100%;
+    padding-top: 11vh;
+    width: 100vw;
     z-index: 0;
     background-color: rgb(92, 73, 73);
 }
 .slideshow-container1 {
     width: 100vw;
-    height: 112vh;
+    height: 100vh;
     background-color: black;
     position: relative;
     margin: auto;
@@ -19,8 +19,8 @@ main {
     object-position: center; /* Centra l'immagine all'interno del contenitore */
 }
 .fade1 {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -32,20 +32,20 @@ main {
 .prev1, .next1 {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 50vh;
     width: auto;
-    margin-top: -22px;
-    padding: 16px;
+    margin-top: -2.2vh;
+    padding: 1.6vw;
     color: white;
     font-weight: bold;
-    font-size: 18px;
-    transition: 0.9s ease;
-    border-radius: 0 3px 3px 0;
+    font-size: 1.8vh;
+    transition: 0.0s ease;
+    border-radius: 0 0.3vh 0.3vh 0;
     user-select: none;
 }
 .next1 {
     right: 0;
-    border-radius: 3px 0 0 3px;
+    border-radius: 0.3vw 0 0 0.3vw;
 }
 .prev1:hover, .next1:hover {
     background-color: rgba(0,0,0,0.8);
@@ -57,8 +57,8 @@ main {
 
 .Bshow {
     background-color: rgb(148, 7, 139); /* Imposta il colore di sfondo del rettangolo */
-    height: 800px; /* Imposta l'altezza del rettangolo */
-    width: 100%; /* Imposta la larghezza del rettangolo in modo che si estenda per tutta la larghezza dell'header */
+    height: 80vh; /* Imposta l'altezza del rettangolo */
+    width: 100vw; /* Imposta la larghezza del rettangolo in modo che si estenda per tutta la larghezza dell'header */
     position: relative; /* Posiziona il rettangolo in modo assoluto rispetto al suo contenitore */
     top: 0;
     left: 0;
@@ -68,8 +68,8 @@ main {
 }
 .Cshow {
     background-color: rgb(7, 14, 148); /* Imposta il colore di sfondo del rettangolo */
-    height: 600px; /* Imposta l'altezza del rettangolo */
-    width: 100%; /* Imposta la larghezza del rettangolo in modo che si estenda per tutta la larghezza dell'header */
+    height: 60vh; /* Imposta l'altezza del rettangolo */
+    width: 100vw; /* Imposta la larghezza del rettangolo in modo che si estenda per tutta la larghezza dell'header */
     position: relative; /* Posiziona il rettangolo in modo assoluto rispetto al suo contenitore */
     top: 0;
     left: 0;
