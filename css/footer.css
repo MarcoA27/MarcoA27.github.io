@@ -1,33 +1,33 @@
 footer {
     background-color: #000000;
     color: #fff;
-    padding: 20px 0;
+    padding: 2vh 0;
     text-align: center;
 }
 .footer-logo {
     width: auto;
-    height: 150px;
+    height: 15vh;
     display: block;
     position: relative;
 }
 .footer-container {
     display: flex;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     justify-content: space-between;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 2vw;
 }
 .footsec {
     flex: 1;
-    min-width: 250px;
-    margin: 20px 0;
+    min-width: 3vw;
+    margin: 2vh 0;
 }
 .footsec h4 {
-    margin-bottom: 10px;
-    font-size: 1.2em;
+    margin-bottom: 1vh;
+    font-size: 3vh;
 }
 .footsec p, .footsec a {
-    font-size: 0.9em;
+    font-size: 2vh;
     color: #ccc;
 }
 .footsec a:hover {
@@ -38,25 +38,92 @@ footer {
     padding: 0;
 }
 .footsec ul li {
-    margin-bottom: 5px;
+    margin-bottom: 0.5vh;
 }
 .footsec ul li a {
     text-decoration: none;
 }
 .newsletter input[type="email"] {
-    padding: 10px;
-    margin-right: 10px;
+    padding: 1vh;
+    margin-right: 1vw;
     border: none;
-    border-radius: 4px;
+    border-radius: 0.4vh;
 }
 .newsletter button {
-    padding: 10px 20px;
+    padding: 1vh 2vw;
     border: none;
-    background-color: #ff9900;
+    background-color: #940707;
     color: #fff;
-    border-radius: 4px;
+    border-radius: 0.4vh;
     cursor: pointer;
 }
 .newsletter button:hover {
-    background-color: #e68a00;
+    background-color: #940707;
+}
+
+/*######################################## viewports < 500 px ########################################*/
+
+@media screen and (max-width: 500px) {
+    footer {
+        background-color: #000000;
+        color: #fff;
+        padding: 2vh 0;
+        text-align: center;
+    }
+    .footer-logo {
+        width: auto;
+        height: 15vh;
+        display: block;
+        position: relative;
+    }
+    .footer-container {
+        display: flex;
+        /*flex-wrap: wrap;*/
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 0 2vw;
+    }
+    .footsec {
+        flex: 1;
+        min-width: 3vw;
+        margin: 2vh 0;
+    }
+    .footsec h4 {
+        margin-bottom: 1vh;
+        font-size: 3vh;
+    }
+    .footsec p, .footsec a {
+        font-size: 2vh;
+        color: #ccc;
+    }
+    .footsec a:hover {
+        color: #fff;
+    }
+    .footsec ul {
+        list-style: none;
+        padding: 0;
+    }
+    .footsec ul li {
+        margin-bottom: 0.5vh;
+    }
+    .footsec ul li a {
+        text-decoration: none;
+    }
+    .newsletter input[type="email"] {
+        padding: 1vh;
+        margin-right: 1vw;
+        border: none;
+        border-radius: 0.4vh;
+    }
+    .newsletter button {
+        padding: 1vh 2vw;
+        border: none;
+        background-color: #940707;
+        color: #fff;
+        border-radius: 0.4vh;
+        cursor: pointer;
+    }
+    .newsletter button:hover {
+        background-color: #940707;
+    }
 }
