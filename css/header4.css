@@ -57,14 +57,7 @@ header {
     color: #940707; /* Cambia il colore del testo quando ci si passa sopra */
     transition: background-color ease; /* Aggiunge un effetto di transizione fluida */
 }
-.navtoggle, 
-.icon,
-.navtoggle #ToggleMenu,
-.navtoggle a,
-.navtoggle a:hover,
-.menu-island a.icon,
-.bars:hover,
-.bars{
+.navtoggle, .navtoggle a, .menu-island a.icon, .bars{
     display: none;
 }
 
@@ -129,10 +122,10 @@ header {
     left: -1.6vw;
     height: 87vh;
     align-content: center;
-  }
-.navtoggle #ToggleMenu {
+}
+.navtoggle #ToggleVoice {
     display: none;
-  }
+}
 .navtoggle a {
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -142,11 +135,11 @@ header {
     align-items: center;
     align-content:stretch;
     height: 14.5vh;
-  }
-  .navtoggle a:hover {
+}
+.navtoggle a:hover {
     background-color: rgba(148, 7, 7, 0.6);
     color: white;
-  }
+}
 .menu-island a.icon {
     background: rgb(255, 255, 255);
     position: fixed;
@@ -156,12 +149,11 @@ header {
     right: 0;
     z-index: 6;
     display: block;
-  }
-  
+}
 .bars:hover {
     background-color: #940707;
     color: white;
-  }
+}
 .bars{
     display: inline-flex;
     position: absolute;
@@ -177,5 +169,4 @@ header {
     user-select: none;
     cursor: pointer;
 }
-
 }
