@@ -1,0 +1,8 @@
+C'è da controllare:
+  Con viewport<500 la striscia bianca accanto al menù a tendina che copre l'immagine di ARTINATTO scritta, forse basta solo alzare z-index
+  Sistemare il footer
+  Allargare i navigatori dx e sx sempre in viewport < 500 (troppo piccoli)
+  Lo slideshow, le immagini sfanculano su device
+
+Fatto questo, c'è da iniziare a lavorare sulla grafica link dello slideshow e sul box latest sempre nella home e sistemare definitivamente il footer
+Finita questa roba la home dovrebbe essere chiusa
