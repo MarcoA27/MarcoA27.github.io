@@ -70,6 +70,17 @@
                 <a href="pagina5.html">Chi siamo</a>
                 <a href="pagina1.html">Contatti</a>
             </nav>
+            <nav class="navtoggle" id="ToggleVoice">
+                <a href="pagina1.html">Eventi</a>
+                <a href="pagina4.html">Repertorio</a>
+                <a href="pagina5.html">Attività</a>
+                <a href="pagina5.html">Archivio</a>
+                <a href="pagina5.html">Chi siamo</a>
+                <a href="pagina1.html">Contatti</a>
+            </nav>
+            <a href="javascript:void(0);" class="icon" onclick="ToggleMenu()">
+                <i class="bars">&#x2261</i>
+            </a>
         </div>
     </header>
 
@@ -197,7 +208,16 @@
         }
         startSlideshow(); // Initialize the slideshow
         </script>
+    
+        <script>
+            function ToggleMenu() {
+            var x = document.getElementById("ToggleVoice");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+            }
+        </script>  
 </body>
-
-
 </html>
