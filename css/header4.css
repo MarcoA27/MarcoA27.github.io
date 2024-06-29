@@ -47,7 +47,7 @@ header {
 .nav a {
     color: rgb(0, 0, 0); /* Colore del testo */
     text-decoration: none; /* Rimuove il sottolineato dei link */
-    margin-right: 4.3vw; /* Spazio tra i link */
+    margin-right: 3.8vw; /* Spazio tra i link */
     z-index: 6;
     font-size: 3vh;
 }
