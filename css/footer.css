@@ -6,6 +6,7 @@ footer {
     bottom: 0hv;
     position: absolute;
     height: 40vh;
+    width: 100vw;
 }
 .footer-logo {
     width: auto;
