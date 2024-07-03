@@ -114,7 +114,7 @@ header {
     display: none;
 } 
 .navtoggle {
-    background-color: rgba(92, 73, 73, 0.7);
+    background-color: rgba(92, 73, 73, 0.9);
     z-index: 6;
     top: 11.5vh;
     position: absolute;
