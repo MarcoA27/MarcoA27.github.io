@@ -63,9 +63,9 @@ footer {
     background-color: #940707;
 }
 
-/*######################################## viewports < 500 px ########################################*/
+/*######################################## viewports < 768 px ########################################*/
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
     footer {
         background-color: #000000;
         color: #fff;
