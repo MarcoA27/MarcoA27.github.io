@@ -1,3 +1,4 @@
+
 main {
     padding-top: 11vh;
     width: 100vw;
@@ -55,25 +56,343 @@ main {
     to {opacity: 1}
 }
 
+.preBshow, .preCshow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+.preBshow::after {
+    content: '';             /* Contenuto vuoto per l'elemento grafico */
+    position: absolute;      /* Posiziona la linea sotto il testo */
+    width: 18%;              /* Larghezza della linea (puoi modificarla) */
+    height: 2px;             /* Spessore della linea */
+    background-color: white; /* Colore della linea */
+    bottom: 50px;
+}
+
+.preBshow {
+    width: 100vw;
+    height: 20vh;
+}
 .Bshow {
-    background-color: rgb(148, 7, 139); /* Imposta il colore di sfondo del rettangolo */
-    height: 80vh; /* Imposta l'altezza del rettangolo */
+    background-color: rgb(255, 255, 255); /* Imposta il colore di sfondo del rettangolo */
     width: 100vw; /* Imposta la larghezza del rettangolo in modo che si estenda per tutta la larghezza dell'header */
-    position: relative; /* Posiziona il rettangolo in modo assoluto rispetto al suo contenitore */
+    height: 80vh;
+    position: relative;
     top: 0;
     left: 0;
     margin: 0 auto;
     padding: 0 auto;
     box-sizing: border-box;
 }
+.Bshow-title {
+    position: relative; /* Necessario per il posizionamento assoluto degli elementi figli */
+    height: 30%; /* Occupa il 20% dell'altezza del blocco */
+    display: flex;
+    justify-content:flex-start;
+    padding-left: 5vw;
+    align-items:center;
+    background-color: #2B346B; /* Colore lilla */
+    letter-spacing: 1vw;
+    font-family: sans-serif;
+}
+
+.title-main {
+    font-size: 7vw;
+    font-weight: bold;
+    z-index: 1; /* Questo testo sarà sopra l'altro */
+    color: black;
+    -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+    -webkit-text-stroke: 0.2vw rgb(255, 255, 255);
+    text-align: left;
+}
+
+.title-overlay {
+    position: absolute;
+    padding-left: 0.5vw;
+    padding-bottom: 0.5vw;
+    font-size: 7vw;
+    font-weight: bold;
+    color: #BB3534; /* Usa lo stesso colore di sfondo del titolo principale */
+    z-index: 0; /* Questo testo sarà sotto l'altro */
+    text-align: left;
+}
+.j3n {
+    color: #EFC630;
+}
+
+/* Contenuto diviso in due colonne (80% dell'altezza rimanente) */
+.Bshow-content {
+    display: flex;
+    height: 70%; /* Occupa il restante 80% del blocco */
+}
+
+/* Immagine nella metà sinistra (50% della larghezza) */
+.Bshow-image {
+    width: 50%; /* Immagine occupa metà larghezza */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2B346B; /* Colore di sfondo per evidenziare l'immagine */
+}
+.Bshow-image img {
+    max-height: 90%; /* Limita l'altezza dell'immagine al 100% del contenitore */
+    width: auto; /* Mantiene la proporzione dell'immagine */
+    height: auto; /* Mantiene la proporzione dell'immagine */
+    object-fit: contain; /* Assicura che l'immagine si adatti al contenitore senza distorsioni */
+    box-shadow: 0 0 2vw rgba(255, 255, 255, 0.6);
+}
+
+.Bshow-description {
+    width: 50%; 
+    padding: 1vw 5vw 2vw 0;
+    background-color: #2B346B; 
+    display: flex; /* Corretto da flexbox a flex */
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    font-size: 2.5vw;
+    color: white;
+    height: 100%;
+    box-sizing: border-box; /* Assicura che padding e bordi siano inclusi nelle dimensioni */
+}
+.Bshow-description p {
+    padding: 0 5vw 0 0;
+    line-height: 1.2;
+}
+.BshowDOWN-description {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vw; /* Spazio tra date e link */
+}
+.BshowDOWN-description p{
+    padding: 0;
+}
+.section-dates, .section-link {
+    width: 50%;
+}
+.section-link {
+    display: flex;
+    justify-content: right;
+}
+.discover-more {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 3vw;
+    background-color: transparent;
+    padding: 0.5vw 1vw;
+    border-radius: 0.5vw;
+    display: inline-block;
+    margin: 0 0;
+    border: 0.1vw solid white;
+}
+.section-dates p {
+    font-size: 2.5vw;
+}
+.section-dates .day {
+    font-size: 3.5vw;
+    font-weight: bold;
+}
+
+
+                                                                .Bshow-link {
+                                                                    width: 10%; /* Larghezza del contenitore */
+                                                                    padding: 1vw;
+                                                                    background-color: #2B346B; /* Colore di sfondo del contenitore */
+                                                                    display: flex;
+                                                                    justify-content: flex-end; /* Allinea il contenuto a destra */
+                                                                    align-items: center;
+                                                                    text-align: right; /* Allinea il testo a destra */
+                                                                    font-size: 3vw; /* Dimensione del font */
+                                                                }
+                                                                .Bshow-link a{
+                                                                    text-decoration: none;
+                                                                    color: white;
+                                                                }
+
+
+.preCshow {
+    width: 100vw;
+    height: 10vh;
+}
 .Cshow {
-    background-color: rgb(7, 14, 148); /* Imposta il colore di sfondo del rettangolo */
-    height: 60vh; /* Imposta l'altezza del rettangolo */
+    background-color: rgb(148, 7, 7); /* Imposta il colore di sfondo del rettangolo */
     width: 100vw; /* Imposta la larghezza del rettangolo in modo che si estenda per tutta la larghezza dell'header */
-    position: relative; /* Posiziona il rettangolo in modo assoluto rispetto al suo contenitore */
+    height: 50vh;
+    position: relative;
     top: 0;
     left: 0;
     margin: 0 auto;
     padding: 0 auto;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+/*######################################## viewports < 1250 px ########################################*/
+
+
+
+
+
+@media screen and (max-width: 1250px) {
+    .preBshow, .preCshow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        position: relative;
+        font-size: 4vw;
+    }
+    .preBshow::after {
+        content: '';             /* Contenuto vuoto per l'elemento grafico */
+        position: absolute;      /* Posiziona la linea sotto il testo */
+        width: 25%;              /* Larghezza della linea (puoi modificarla) */
+        height: 1px;             /* Spessore della linea */
+        background-color: white; /* Colore della linea */
+        bottom: 6vw;
+    }
+    
+    .preBshow {
+        width: 100vw;
+        height: 20vw;
+    }
+    .Bshow {
+        background-color: rgb(255, 255, 255); /* Imposta il colore di sfondo del rettangolo */
+        width: 100vw; /* Imposta la larghezza del rettangolo in modo che si estenda per tutta la larghezza dell'header */
+        height: 40vh;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+        padding: 0 auto;
+        box-sizing: border-box;
+    }
+    .Bshow-title {
+        position: relative; /* Necessario per il posizionamento assoluto degli elementi figli */
+        height: 15%; /* Occupa il 20% dell'altezza del blocco */
+        display: flex;
+        justify-content:flex-start;
+        padding-left: 5vw;
+        align-items:center;
+        background-color: #2B346B; /* Colore lilla */
+        letter-spacing: 1vw;
+        font-family: sans-serif;
+    }
+    
+    .title-main {
+        font-size: 9vw;
+        font-weight: bold;
+        z-index: 1; /* Questo testo sarà sopra l'altro */
+        color: black;
+        -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+        -webkit-text-stroke: 0.2vw rgb(255, 255, 255);
+        text-align: left;
+    }
+    
+    .title-overlay {
+        position: absolute;
+        padding-left: 0.5vw;
+        padding-bottom: 0.5vw;
+        font-size: 9vw;
+        font-weight: bold;
+        color: #BB3534; /* Usa lo stesso colore di sfondo del titolo principale */
+        z-index: 0; /* Questo testo sarà sotto l'altro */
+        text-align: left;
+    }
+    .j3n {
+        color: #EFC630;
+    }
+    
+    /* Contenuto diviso in due colonne (80% dell'altezza rimanente) */
+    .Bshow-content {
+        display: flex;
+        height: 85%; /* Occupa il restante 80% del blocco */
+    }
+    
+    /* Immagine nella metà sinistra (50% della larghezza) */
+    .Bshow-image {
+        width: 50%; /* Immagine occupa metà larghezza */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #2B346B; /* Colore di sfondo per evidenziare l'immagine */
+    }
+    .Bshow-image img {
+        max-width: 90%; /* Limita l'altezza dell'immagine al 100% del contenitore */
+        width: auto; /* Mantiene la proporzione dell'immagine */
+        height: auto; /* Mantiene la proporzione dell'immagine */
+        object-fit: contain; /* Assicura che l'immagine si adatti al contenitore senza distorsioni */
+        box-shadow: 0 0 2vw rgba(255, 255, 255, 0.6);
+    }
+    
+    .Bshow-description {
+        width: 50%; 
+        padding: 4vw 2vw 2vw 2vw;
+        background-color: #2B346B; 
+        display: flex; /* Corretto da flexbox a flex */
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: left;
+        font-size: 3.5vw;
+        color: white;
+        height: 100%;
+        box-sizing: border-box; /* Assicura che padding e bordi siano inclusi nelle dimensioni */
+    }
+    .Bshow-description p {
+        padding: 0 5vw 0 0;
+        line-height: 1.2;
+    }
+    .BshowDOWN-description {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        gap: 5vw; /* Spazio tra date e link */
+    }
+    .BshowDOWN-description p{
+        padding: 0;
+    }
+    .section-dates, .section-link {
+        width: auto;
+    }
+    .section-dates{
+        align-self: flex-start;
+    }
+    .section-link {
+        display: flex;
+        justify-content: right;
+        align-self: flex-end;
+    }
+    .discover-more {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 5vw;
+        background-color: transparent;
+        padding: 0.5vw 1vw;
+        border-radius: 0.5vw;
+        display: inline-block;
+        margin: 0 0;
+        border: 0.1vw solid white;
+    }
+    .section-dates p {
+        font-size: 4.5vw;
+    }
+    .section-dates .day {
+        font-size: 4.5vw;
+        font-weight: bold;
+    }
 }

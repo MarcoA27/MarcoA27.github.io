@@ -60,7 +60,7 @@
 
     <header>
         <div class="menu-island">
-            <img src="imgs\LogoQuadrato_2.419x2.519_.JPG" alt="Logo del sito" class="logo">
+            <a href="index.html"><img src="imgs\LogoQuadrato_2.419x2.519_.JPG" alt="Logo del sito" class="logo"></a>
             <img src="imgs\ARTINATTO.png" alt="Logo trascritto" class="scrittalogo">
             <nav class="nav">
                 <a href="index.html">Home</a>
@@ -80,8 +80,8 @@
                 <a href="Chisiamo.html">Chi siamo</a>
                 <a href="Contatti.html">Contatti</a>
             </nav>
-            <a href="javascript:void(0);" class="icon" onclick="ToggleMenu()">
-                <i class="bars">&#x2261</i>
+            <a href="javascript:void(0);" class="icon">
+                <i class="bars" onclick="ToggleMenu()">&#x2261</i>
             </a>
         </div>
     </header>
@@ -112,40 +112,55 @@
             <a class="next1" onclick="plusSlides(1)">&#10095;</a>
         </div>
 
+        <div class="preBshow">
+            <h2> prossimi eventi </h2>
+        </div>
+
         <div class="Bshow">
-            <!-- Qui metterò l'immagine-->
+            <div class="Bshow-title">
+                <h1 class="title-main">RITIINVISIBILI</h1>
+                <h1 class="title-overlay">RIT<span class="j3n">II</span>NVISIBILI</h1>
+            </div>
+            <div class="Bshow-content">
+                <div class="Bshow-image">
+                    <img src="imgs\RITiS2425.jpg" alt="Locandina Prossimo Evento">
+                </div>
+                <div class="Bshow-description">
+                    <p>Torna la Stagione teatrale RITiNVISIBILI, a cura di ArtinAtto e dell’Associazione Culturale TEATROinSTALLA patrocinata dal X municipio di Roma!</p>
+                    <div class="BshowDOWN-description">
+                        <div class="section-dates">
+                            <p><span class="day">19</span> Ottobre 2024</p>
+                            <p><span class="day">11</span> Maggio 2025</p>
+                        </div>
+                        <div class="section-link">
+                            <a href="https://esempio.com" class="discover-more">Scopri di più!</a>
+                    </div>
+                </div>
+                </div>
+                <!--<div class="Bshow-link">
+                    <a class="linkto" href="">&#10095;</a>
+                </div>-->
+            </div>
+        </div>    
+
+        <div class="preCshow">
         </div>
-
-        <section>
-            <h1>Titolo Principale</h1>
-            <p>Paragrafo di esempio.</p><a href="pagina1.html">Eventi</a>
-            <img src="immagine.jpg" alt="Descrizione immagine">
-        </section>
-
-        <article>
-            <h2>Titolo Articolo</h2>
-            <p>Contenuto dell'articolo.</p>
-        </article>
-
+        
         <div class="Cshow">
-            <!-- Qui metterò l'immagine-->
+            <div>
+                
+            </div>
+            <div>
+                
+            </div>
+            <div>
+                
+            </div>
         </div>
-
-        <section>
-            <h1>Titolo Principale</h1>
-            <p>Paragrafo di esempio.</p><a href="pagina1.html">Eventi</a>
-            <img src="immagine.jpg" alt="Descrizione immagine">
-        </section>
-
-        <article>
-            <h2>Titolo Articolo</h2>
-            <p>Contenuto dell'articolo.</p>
-        </article>
     </main>
-    
-    <aside>
-        <!-- Contenuto secondario, come widget o barre laterali -->
-    </aside>
+    <!--<aside>
+        Contenuto secondario, come widget o barre laterali
+    </aside>-->
 
     <footer>
         <div class="footer-container">
@@ -211,15 +226,16 @@
         startSlideshow(); // Initialize the slideshow
         </script>
     
-        <script>
-            function ToggleMenu() {
-            var x = document.getElementById("ToggleVoice");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-            }
-        </script>  
+    <script>
+        function ToggleMenu() {
+        var x = document.getElementById("ToggleVoice");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+        }
+    </script>
+
 </body>
 </html>
